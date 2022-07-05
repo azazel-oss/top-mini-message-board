@@ -1,0 +1,12 @@
+extends layout 
+
+block content
+  h1 Add a new message
+  form(method="POST" action="/new")
+    label(for="author") Enter your name:
+    input#author(type="text", name="author")
+    br
+    label(for="text") Write your message: 
+    input#text(type="text", name="text")
+    br
+    input(type="submit", value="Send text")
